@@ -1,0 +1,296 @@
+hr {
+    margin-top: 70px;
+}
+
+/* CABEÇALHO */
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white100);
+    z-index: 1;
+}
+
+.container__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px 15px;
+}
+
+.container__cabecalho>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container__cabecalho>i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container__cabecalho--buttons {
+    display: flex;
+    gap: 15px;
+
+    margin: 15px auto;
+}
+
+.container__cabecalho--buttons>button {
+    width: 130px;
+    height: 40px;
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: var(--Brand100);
+
+    background-color: transparent;
+    border: 1px solid var(--Brand100);
+
+    cursor: pointer;
+}
+
+.container__cabecalho--buttons>button:hover {
+    background-color: var(--Brand100);
+    color: var(--white100);
+}
+
+#cadastrar {
+    background-color: var(--Brand100);
+    color: var(--white100);
+}
+
+#cadastrar:hover {
+    background-color: #3900d5;
+}
+
+
+/* MENU PRINCIPAL */
+
+.main__conteiner {
+    display: flex;
+    width: 85%;
+    margin: 25px auto;
+}
+
+.main__conteiner--img-empresario {
+    width: 450px;
+    height: 540px;
+    display: none;
+}
+
+.main__conteiner--img-empresario>img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__conteiner>div {
+    max-width: 100%;
+}
+
+.main__conteiner>div>div {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--Brand100);
+}
+
+.main__conteiner>div>div>p {
+    font-size: 1.2rem;
+    font-family: var(--inter);
+    color: var(--white100);
+}
+
+.main__conteiner>div>div>i {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+
+    font-size: 1.8rem;
+    color: var(--white100);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main__conteiner>div>div>i:hover {
+    color: var(--gray100);
+}
+
+.main__empresas--select-setores {
+    position: absolute;
+    top: 55px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+    padding: 20px;
+    width: 150px;
+    background-color: #F8F8F8;
+
+    animation: transicao 1s ease;
+}
+
+.main__empresas--select-setores>option {
+    font-size: 1.3rem;
+    font-family: var(--roboto);
+    background-color: var(--white100);
+    width: 100%;
+
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main__empresas--select-setores>option:hover {
+    color: var(--white100);
+    background-color: var(--Brand100);
+}
+
+.main__conteiner--listaDeEmpresas {
+    display: flex;
+    gap: 15px;
+    padding: 20px 10px;
+    max-width: 100%;
+    height: 200px;
+
+    background-color: #F8F8F8;
+
+    overflow-x: auto;
+}
+
+.main__conteiner--listaDeEmpresas-empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+
+    border-bottom: 1px solid var(--Brand100);
+
+    flex-shrink: 0;
+
+    width: 220px;
+
+    background-color: var(--white100);
+}
+
+.main__conteiner--listaDeEmpresas-empresa>h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: var(--inter);
+}
+
+.main__conteiner--listaDeEmpresas-empresa>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__conteiner--listaDeEmpresas-empresa>div>p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--inter);
+}
+
+.main__conteiner--listaDeEmpresas-empresa>div>span {
+    width: max-content;
+
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--inter);
+    color: var(--Brand100);
+
+    padding: 7px 18px;
+    border: 1px solid var(--Brand100);
+    border-radius: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes transicao {
+    0% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media(min-width: 669px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .container__cabecalho>i {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        position: initial;
+        margin: 5px auto;
+    }
+
+    hr {
+        margin: 0px;
+    }
+
+    .container__cabecalho--buttons {
+        display: flex;
+        margin: 10px 0;
+    }
+
+
+    .main__conteiner {
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    .main__conteiner--img-empresario {
+        display: flex;
+    }
+
+    .main__empresas--select-setores {
+        width: 200px;
+    }
+
+    .main__conteiner .main__empresas {
+        width: 60%;
+    }
+
+    .main__conteiner--listaDeEmpresas {
+        flex-direction: column;
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .main__conteiner--listaDeEmpresas-empresa {
+        margin: 0 auto;
+        height: 110px;
+        width: 90%;
+    }
+}

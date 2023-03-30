@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="shortcut icon" href="src/assets/img/header/Ellipse 1.svg" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/golbalStyle.css">
+    <link rel="stylesheet" href="src/pages/home/home.css">
+
+    <!-- Font Wesome -->
+    <script src="https://kit.fontawesome.com/27bc14622e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container__cabecalho">
+            <div>
+                <img src="src/assets/img/header/Ellipse 1.svg" alt="">
+                <img src="src/assets/img/header/Kenzie Empresas.svg" alt="">
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="container__cabecalho--buttons hidden">
+            <button id="login">Login</button>
+            <button id="cadastrar">Cadastro</button>
+        </div>
+    </header>
+    <hr>
+    <main class="main__conteiner">
+        <div class="main__conteiner--img-empresario">
+            <img src="src/assets/img/header/Rectangle 6.svg" alt="">
+        </div>
+        <div class="main__empresas">
+            <div>
+                <p>Selecionar Setor</p>
+                <i class="fa-solid fa-arrow-down"></select> </i>
+                <div class="main__empresas--select-setores hidden">
+                    <option value="Todos">Todas os Setores</option>
+                    <option value="Alimenticio">Alimentício</option>
+                    <option value="Varejo">Varejo</option>
+                    <option value="Textil">Têxtil</option>
+                    <option value="Manufatura">Manufatura</option>
+                    <option value="Aeroespacial">Aeroespacial</option>
+                    <option value="Automotiva">Automotiva</option>
+                    <option value="TI">TI</option>
+                    <option value="Atacado">Atacado</option>
+                </div>
+            </div>
+            <ul class="main__conteiner--listaDeEmpresas">
+                <!--                 <li class="main__conteiner--listaDeEmpresas-empresa">
+                    <h3>Empresa Name</h3>
+                    <div>
+                        <p>10 Horas</p>
+                        <span>Setor</span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+    <script type="module" src="src/pages/home/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas</title>
+
+    <link rel="shortcut icon" href="../../assets/img/header/Ellipse 1.svg" type="image/x-icon">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/golbalStyle.css">
+    <link rel="stylesheet" href="dash-user.css">
+    <link rel="stylesheet" href="../../styles/modais.css">
+
+    <!-- Font Wesome -->
+    <script src="https://kit.fontawesome.com/27bc14622e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container__cabecalho">
+            <div>
+                <img src="./../../assets/img/header/Ellipse 1.svg" alt="">
+                <img src="./../../assets/img/header/Kenzie Empresas.svg" alt="">
+            </div>
+        </div>
+        <div class="container__cabecalho--buttons hidden">
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+    <hr>
+    <main class="main__container">
+        <div class="main__container--infos">
+<!--             <h2>USERNAME</h2>
+            <div>
+                <span>Email: meuemail@mail.com</span>
+                <span>Pleno</span>
+                <span>Home Office</span>
+            </div>
+            <i class="fa-solid fa-pen"></i> -->
+        </div>
+        <div class="main__container--ul">
+            <div class="hidden">
+                <!-- <h2>Company Name - Department Name</h2> -->
+            </div>
+            <ul class="main__container--lista">
+                <!-- <p class="">Você ainda não foi contratado</p> -->
+<!--                 <li>
+                    <p>Nome do colega</p>
+                    <span>Sênior</span>
+                </li> -->
+            </ul>
+        </div>
+    </main>
+
+    <dialog class="editar__usuario">
+        <i class="fa-solid fa-xmark"></i>
+        <div>
+            <h2>Editar Usuário</h2>
+            <input type="text" name="username" placeholder="Seu nome">
+            <input type="text" name="email" placeholder="Seu e-mail">
+            <input type="text" name="password" placeholder="Sua senha">
+            <button>Editar perfil</button>
+        </div>
+    </dialog>
+
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="dash-user.js"></script>
+</body>
+
+</html>

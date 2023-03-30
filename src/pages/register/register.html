@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <link rel="shortcut icon" href="../../assets/img/header/Ellipse 1.svg" type="image/x-icon">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../../styles/reset.css">
+    <link rel="stylesheet" href="./../../styles/golbalStyle.css">
+    <link rel="stylesheet" href="register.css">
+
+    <!-- Font Wesome -->
+    <script src="https://kit.fontawesome.com/27bc14622e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container__cabecalho">
+            <div>
+                <img src="./../../assets/img/header/Ellipse 1.svg" alt="">
+                <img src="./../../assets/img/header/Kenzie Empresas.svg" alt="">
+            </div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="container__cabecalho--buttons hidden">
+            <button id="home">Home</button>
+            <button id="login">Login</button>
+        </div>
+    </header>
+
+    <main class="main__conteiner">
+        <hr>
+        <div>
+            <form class="formulario__container" action="#">
+                <h2>Cadastrar-se</h2>
+                <input id="inputs" name="username" type="text" placeholder="Seu Nome">
+                <input id="inputs" name="email" type="text" placeholder="Seu e-mail">
+                <input id="inputs" name="password" type="password" placeholder="Sua senha">
+                <select id="inputs" name="professional_level" id="">
+                    <option value="estágio">estágio</option>
+                    <option value="júnior">júnior</option>
+                    <option value="pleno">pleno</option>
+                    <option value="sênior">sênior</option>
+                </select>
+                <button id="btnCadastrar-se">Cadastrar-se</button>
+                <span>ou</span>
+                <button id="btnRetornar">Retornar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="register.js"></script>
+</body>
+
+</html>

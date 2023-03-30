@@ -1,0 +1,193 @@
+hr {
+    margin-top: 80px;
+}
+
+/* CABEÇALHO */
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white100);
+    z-index: 1;
+}
+
+.container__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px 15px;
+}
+
+.container__cabecalho>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container__cabecalho>i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container__cabecalho--buttons {
+    display: flex;
+    gap: 15px;
+
+    margin: 15px auto;
+}
+
+.container__cabecalho--buttons>button {
+    width: 130px;
+    height: 40px;
+
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--roboto);
+    color: var(--Brand100);
+
+    background-color: transparent;
+    border: 1px solid var(--Brand100);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container__cabecalho--buttons>button:hover {
+    background-color: var(--Brand100);
+    color: var(--white100);
+}
+
+#login {
+    background-color: var(--Brand100);
+    color: var(--white100);
+}
+
+#cadastrar:hover {
+    background-color: #3900d5;
+}
+
+.hidden {
+    display: none;
+}
+
+/* MENU PRINCIPAL */
+
+.main__conteiner {
+    background-image: url("../../assets/img/main/Rectangle\ 7.svg");
+    background-position: top;
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 30px;
+    padding: 30px 20px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.formulario__container>h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--roboto);
+}
+
+.formulario__container>input,select {
+    font-size: 1.1rem;
+    font-family: var(--inter);
+    padding: 10px 20px;
+
+    border: 1px solid #00000020;
+    border-radius: 4px;
+    background-color: var(--white100);
+
+    cursor: pointer;
+    transition: .5s;
+}
+.formulario__container>input:hover{
+    border-color: var(--Brand100);
+}
+.formulario__container>input:focus{
+    outline: 1px solid var(--Brand100);
+}
+
+select:focus{
+    border: 1px solid var(--Brand100);
+}
+
+.formulario__container>span {
+    font-size: .9rem;
+    font-family: var(--inter);
+
+    margin: 0 auto;
+}
+
+#btnCadastrar-se {
+    background-color: var(--Brand100);
+    color: var(--white100);
+}
+#btnCadastrar-se:hover {
+    background-color: #3900d5;
+}
+
+.formulario__container>button {
+    font-size: 1.1rem;
+    font-family: var(--roboto);
+    padding: 10px 20px;
+    color: var(--Brand100);
+
+    border: 1px solid var(--Brand100);
+    background-color: transparent;
+
+    cursor: pointer;
+    transition: .3s;
+}
+.formulario__container>button:hover {
+    background-color: var(--Brand100);
+    color: var(--white100);
+}
+
+@media(min-width: 669px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .container__cabecalho>i {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 85%;
+        position: initial;
+        margin: 5px auto;
+    }
+
+    hr {
+        margin: 0px;
+    }
+
+    .container__cabecalho--buttons {
+        display: flex;
+        margin: 10px 0;
+    }
+
+    .formulario__container{
+        max-width: 35%;
+        margin: 30px auto;
+    }
+}

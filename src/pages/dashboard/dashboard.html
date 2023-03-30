@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenzie Empresas - ADM</title>
+
+    <link rel="shortcut icon" href="../../assets/img/header/Ellipse 1.svg" type="image/x-icon">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/golbalStyle.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../../styles/modais.css">
+
+    <!-- Font Wesome -->
+    <script src="https://kit.fontawesome.com/27bc14622e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container__cabecalho">
+            <div>
+                <img src="./../../assets/img/header/Ellipse 1.svg" alt="">
+                <img src="./../../assets/img/header/Kenzie Empresas.svg" alt="">
+            </div>
+        </div>
+        <div class="container__cabecalho--buttons hidden">
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+    <hr>
+    <main class="main__principal">
+        <section class="main__principal--departamentos">
+            <div>
+                <h2>Departamentos</h2>
+                <select>
+                    <!-- <option value="">Selecionar Empresa</option> -->
+                </select>
+                <div>
+                    <button id="criar">Criar</button>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <ul class="main__principal--departamentos-lista">
+                <!--                 <li>
+                    <h3>Department Name</h3>
+                    <p>Department Description</p>
+                    <span>Company Name</span>
+                    <div>
+                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+        <section class="main__principal--usuarios">
+            <div>
+                <h2>Usuários cadastrados</h2>
+            </div>
+            <ul class="main__principal--usuarios-lista">
+                <!--                 <li>
+                    <h3>User Name</h3>
+                    <p>Peno</p>
+                    <span>Company Name</span>
+                    <div>
+                        <i class="fa-solid fa-pen"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+
+    </main>
+
+    <dialog class="criar__departamento">
+        <form>
+            <h2>Criar Departamento</h2>
+            <input id="inputsCriarDepartamento" type="text" name="name" placeholder="Nome do departamento">
+            <input id="inputsCriarDepartamento" type="text" name="description" placeholder="Descrição">
+            <select class="selectCriarDepartamento" id="inputsCriarDepartamento" name="company_uuid">
+                <!-- <option value="">Selecionar empresa</option> -->
+            </select>
+            <button id="criarDepart">Criar o departamento</button>
+            <i class="fa-solid fa-xmark"></i>
+        </form>
+    </dialog>
+    <dialog class="editar__departamento">
+        <form>
+            <h2>Editar Departamento</h2>
+            <input type="text" name="description" placeholder="Valores anteriores da descrição">
+            <button>Salvar alterações</button>
+            <i class="fa-solid fa-xmark"></i>
+        </form>
+    </dialog>
+    <dialog class="apagar__departamento">
+        <div>
+            <p>Realmente deseja deletar o Departamento NOME e demitir seus funcionários?</p>
+            <button> Confirmar </button>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </dialog>
+    <dialog class="infos__departamento">
+        <!-- <div>
+            <i class="fa-solid fa-xmark"></i>
+            <h2>Nome do departamento</h2>
+            <div>
+                <div>
+                    <h3>Descrição do departamento</h3>
+                    <p>Empresa pertencente</p>
+                </div>
+                <div class="div__select">
+                    <select>
+                        <option value="">Selecionar usuário</option>
+                    </select>
+                    <button>Contratar</button>
+                </div>
+            </div>
+            <ul class="infos__departamento--lista">
+                <li class="infos__departamento--lista-usuario">
+                    <h3>Username</h3>
+                    <p>Pleno</p>
+                    <span>Company Name</span>
+                    <button>Desligar</button>
+                </li>
+            </ul>
+        </div> -->
+    </dialog>
+    <dialog class="editar__usuario">
+        <i class="fa-solid fa-xmark"></i>
+        <div>
+            <h2>Editar Usuário</h2>
+            <select name="kind_of_work">
+                <option value="presencial">Presencial</option>
+                <option value="hibrido">Hibrido</option>
+                <option value="home office">Home office</option>
+            </select>
+            <select name="professional_level">
+                <option value="estágio">Estágio</option>
+                <option value="júnior">júnior</option>
+                <option value="pleno">pleno</option>
+                <option value="sênior">sênior</option>
+            </select>
+            <button>Editar</button>
+        </div>
+    </dialog>
+
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>

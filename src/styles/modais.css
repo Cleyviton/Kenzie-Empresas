@@ -1,0 +1,487 @@
+/* MODAL DE CRIAÇÃO DE DEPARTAMENTO */
+
+.criar__departamento {
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    width: 450px;
+    height: max-content;
+
+    padding: 35px 30px;
+    animation: transicao .7s;
+}
+
+.criar__departamento::backdrop {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.criar__departamento>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.criar__departamento>form>h2 {
+    font-size: 2rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.criar__departamento>form input,
+select {
+    font-size: 1rem;
+    font-family: var(--inter);
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.criar__departamento>form input:hover {
+    border-color: var(--gray100);
+}
+
+.criar__departamento>form input:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.criar__departamento>form>button {
+    font-size: 1rem;
+    font-family: var(--inter);
+    color: var(--white100);
+
+    border: 1px solid var(--Brand100);
+    background-color: var(--Brand100);
+
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.criar__departamento>form>button:hover {
+    background-color: #3900d7;
+}
+
+.criar__departamento>form>i {
+    position: absolute;
+    top: -24px;
+    right: -15px;
+
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.criar__departamento>form>i:hover {
+    color: var(--gray100);
+}
+
+/* MODAL DE EDITAR DEPARTAMENTO */
+
+.editar__departamento {
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    width: 450px;
+    height: max-content;
+
+    padding: 35px 30px;
+    animation: transicao .7s;
+}
+
+.editar__departamento::backdrop {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.editar__departamento>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editar__departamento>form>h2 {
+    font-size: 2rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.editar__departamento>form input {
+    font-size: 1rem;
+    font-family: var(--inter);
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    padding: 10px 10px 80px 10px;
+
+    cursor: pointer;
+}
+
+.editar__departamento>form input:hover {
+    border-color: var(--gray100);
+}
+
+.editar__departamento>form input:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.editar__departamento>form>button {
+    font-size: 1rem;
+    font-family: var(--inter);
+    color: var(--white100);
+
+    border: 1px solid var(--Brand100);
+    background-color: var(--Brand100);
+
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.editar__departamento>form>button>:hover {
+    background-color: #3900d7;
+}
+
+.editar__departamento>form>i {
+    position: absolute;
+    top: -24px;
+    right: -15px;
+
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.editar__departamento>form>i:hover {
+    color: var(--gray100);
+}
+
+/* MODAL DE APAGAR DEPARTAMENTO */
+
+.apagar__departamento {
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    width: 500px;
+    height: max-content;
+
+    animation: transicao .7s;
+}
+
+.apagar__departamento::backdrop {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.apagar__departamento>div {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+
+    margin: 30px 50px;
+}
+
+.apagar__departamento>div>p {
+    font-size: 1.9rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.apagar__departamento>div>button {
+    font-size: 1rem;
+    font-family: var(--inter);
+    color: var(--white100);
+
+    border: 1px solid var(--sucess100);
+    background-color: var(--sucess100);
+
+    padding: 10px 10px;
+    cursor: pointer;
+
+    width: 300px;
+    margin: 0 auto;
+}
+
+.apagar__departamento>div>button:hover {
+    background-color: #438632;
+}
+
+.apagar__departamento>div>i {
+    position: absolute;
+    top: -35px;
+    right: -50px;
+
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.apagar__departamento>div>i:hover {
+    color: var(--gray100);
+}
+
+
+/* MODAL DE INFORMAÇÕES DO DEPARTAMENTO */
+
+
+.infos__departamento {
+    position: relative;
+    border: 1px solid transparent;
+
+    width: 800px;
+    height: max-content;
+
+    animation: transicao .7s;
+}
+
+.infos__departamento::backdrop {
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.infos__departamento>div {
+    padding: 0 20px;
+}
+
+.infos__departamento>div>i {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.infos__departamento>div>i:hover {
+    color: var(--gray100);
+}
+
+.infos__departamento>div>h2 {
+    font-size: 2rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+
+    margin: 10px 0;
+}
+
+.infos__departamento>div>div {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.infos__departamento>div>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infos__departamento>div>div>div>h3 {
+    font-size: 1.2rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+
+    margin: 7px 0;
+}
+
+.infos__departamento>div>div>div>p {
+    font-size: 1rem;
+    font-family: var(--roboto);
+    font-weight: 400;
+}
+
+.div__select {
+    align-items: flex-end;
+}
+
+.infos__departamento>div>div>div>select {
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.div__select>button {
+    font-size: 1rem;
+    font-family: var(--inter);
+    color: var(--white100);
+
+    width: max-content;
+    padding: 10px 50px;
+
+    border: 1px solid var(--sucess100);
+    background-color: var(--sucess100);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.div__select>button:hover {
+    background-color: #438632;
+}
+
+.infos__departamento--lista {
+    display: flex;
+    gap: 32px;
+
+    width: 100%;
+    height: 170px;
+
+    margin: 30px 0;
+    padding: 30px 17px;
+    background-color: #F8F8F8;
+
+    overflow-x: auto;
+}
+
+.infos__departamento--lista-usuario {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 10px;
+
+    width: 230px;
+
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--Brand100);
+
+    background-color: var(--white100);
+}
+
+.infos__departamento--lista-usuario>h3 {
+    font-size: 1.1rem;
+    font-family: var(--inter);
+    font-weight: 700;
+}
+
+.infos__departamento--lista-usuario>p {
+    font-size: 1.05rem;
+    font-family: var(--inter);
+}
+
+.infos__departamento--lista-usuario>p {
+    font-size: 1.05rem;
+    font-family: var(--inter);
+}
+
+.infos__departamento--lista-usuario>span {
+    font-size: .9rem;
+    font-family: var(--inter);
+}
+
+.infos__departamento--lista-usuario>button {
+    font-size: 1rem;
+    font-family: var(--inter);
+    font-weight: 700;
+    color: var(--error100);
+
+    width: max-content;
+    margin: 5px auto;
+
+    border: 1px solid var(--error100);
+    background-color: transparent;
+
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.infos__departamento--lista-usuario>button:hover{
+    color: var(--white100);
+    background-color: var(--error100);
+}
+
+/* EDITAR USER */
+
+.editar__usuario{
+    position: relative;
+    border: 1px solid transparent;
+
+    width: 400px;
+    height: max-content;
+
+    padding: 35px;
+
+    animation: transicao .7s;
+}
+
+.editar__usuario::backdrop{
+    background-color: rgba(0, 0, 0, 0.474);
+}
+
+.editar__usuario>i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.editar__usuario>i:hover {
+    color: var(--gray100);
+}
+
+.editar__usuario>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.editar__usuario>div>h2{
+    font-size: 2.1rem;
+    font-family: var(--roboto);
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.editar__usuario>div>select{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.editar__usuario>div>button {
+    font-size: 1rem;
+    font-family: var(--inter);
+    color: var(--white100);
+
+    border: 1px solid var(--Brand100);
+    background-color: var(--Brand100);
+
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.editar__usuario>div>button:hover {
+    background-color: #3900d7;
+}
+
+@keyframes transicao {
+    0% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

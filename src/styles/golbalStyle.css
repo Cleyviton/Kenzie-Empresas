@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --Brand100: #4200FF;
+    --gray100: #000000;
+    --sucess100: #4BA036;
+    --error100: #CE4646;
+    --white100: #FFFFFF;
+
+    --inter: 'Inter', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue;
+}
